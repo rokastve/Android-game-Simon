@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#C0C0C0">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0"
+            android:autoText="true"
+            android:text="Score:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="2"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_height="83dp"
+            android:layout_columnWeight="0"
+            android:text="Stage:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stageText"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="2"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="#008000"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="#ff0000"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/yellowButton"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="#ffff00"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="#0000ff"
+            android:gravity="center" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="38dp">
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C0C0"
+            android:text="Time left:"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:progress="100" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

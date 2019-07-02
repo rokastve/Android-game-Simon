@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66aaa5">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="-1"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/musicMuteButton"
+            android:background="@drawable/mutemusic"
+            android:scaleX="-1"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/soundsMuteButton"
+            android:background="@drawable/mute"
+            android:scaleX="-1"/>
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:shadowDx="1.2"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="SIMON"/>
+    <Button
+        android:id="@+id/startButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#e7dce2"
+        android:text="PLAY"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#e7dce2"
+        android:text="SCORES"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#e7dce2"
+        android:text="EXIT"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|end">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Made by: Rokas Tverijonas IFF-6/15. 2018"/>
+    </LinearLayout>
+</LinearLayout>
